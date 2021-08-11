@@ -4,7 +4,7 @@
   "description": "taxi backend",
   "main": "App.js",
   "scripts": {
-    "start": "nodemon App.js"
+    "start": "node App.js"
   },
   "author": "ronewa",
   "license": "ISC",
@@ -16,4 +16,7 @@
     "mongoose": "^5.13.6",
     "nodemon": "^2.0.12"
   }
+ "engines":{
+   "node":"14.17.1"
+ }
 }
