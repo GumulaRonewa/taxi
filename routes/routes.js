@@ -13,7 +13,7 @@ router.route('/add').post((req, res) => {
 });
 
 router.route('/').get((req, res) => {
-  res.json(routes)
+  res.json(routes.find())
 
 });
 module.exports = router;
