@@ -13,7 +13,7 @@ router.route('/add').post((req, res) => {
 });
 
 router.route('/search').post((req, res) => {
-  routes.find({from:req.body.from})
+  routes.find({from:req.body.from,to:req.body.to})
       .then(route => res.json(route))
       .catch(err => console.log("Error")); 
 });
