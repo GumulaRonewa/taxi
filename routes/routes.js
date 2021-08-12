@@ -12,7 +12,11 @@ router.route('/add').post((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-
+router.route('/search').post((req, res) => {
+  routes.find({from:req.body.From})
+      .then(route => res.json(route))
+      .catch(err => console.log("Error")); 
+});
 router.route('/').get((req, res) => {
   routes.find()
   .then(route => res.json(route))
