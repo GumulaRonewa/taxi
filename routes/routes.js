@@ -13,7 +13,7 @@ router.route('/add').post((req, res) => {
 });
 
 router.route('/search').post((req, res) => {
-  routes.find({Province:"WC")
+  routes.find({Province:"WC"})
       .then(route => res.json(route))
       .catch(err => console.log("Error")); 
 });
